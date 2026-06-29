@@ -65,7 +65,7 @@ export default function App() {
   // UI States
   const [activePresetId, setActivePresetId] = useState('ripple');
   const [sliceZ, setSliceZ] = useState(-20);
-  const [floorZ, setFloorZ] = useState(-75);
+  const [floorZ, setFloorZ] = useState(-120);
   const [vectorSpacing, setVectorSpacing] = useState(14);
   const [vectorScale, setVectorScale] = useState(0.8);
   const [particleSpeed, setParticleSpeed] = useState(1.0);
@@ -889,7 +889,7 @@ export default function App() {
       ctx.fillText('Y AXIS', yLabelPr.x, yLabelPr.y + 26);
 
       const zLabelPr = project({ x: leftCorner.x, y: leftCorner.y, z: 20 }, w, h, az, el, zm);
-      ctx.fillText('Z HEIGHT', zLabelPr.x, zLabelPr.y - 8);
+      ctx.fillText('f(x, y)', zLabelPr.x, zLabelPr.y - 8);
 
       animId = requestAnimationFrame(render);
     };
@@ -1046,7 +1046,7 @@ export default function App() {
               <input
                 id="floor_z_slider"
                 type="range"
-                min="-110"
+                min="-200"
                 max="-45"
                 step="5"
                 value={floorZ}
