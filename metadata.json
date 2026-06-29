@@ -1,0 +1,6 @@
+{
+  "name": "Gradient Field Simulator",
+  "description": "An interactive, high-performance simulation of scalar fields, contour lines, and gradient vectors with real-time particle tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
